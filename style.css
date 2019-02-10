@@ -1,0 +1,112 @@
+body{
+    margin:0;
+}
+
+#main{ 
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "section section section"
+    "aside aside aside"
+    "footer footer footer";
+    grid-template-rows: 
+    320px 200px 300px 350px 60px;}   
+    
+    
+header{
+        grid-area: header;
+        background-image: url(Imagem/banner.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+  
+
+
+
+      
+header h1{
+            display: flex;
+            justify-content:center; 
+            align-items: center;
+            color: white;
+            font-size: 50px;
+            font-family: 'Pacifico', cursive;
+        }
+header p{
+         color: white;
+        align-items: center;
+         justify-content: flex-start;
+        font-size: 20pt;
+        font-family:'Roboto', sans-serif;
+        }
+
+#icone-ios {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+
+    height: 50px;
+            background-color: rgb(46, 204,111);
+
+}        
+        
+ nav{
+        grid-area: nav;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+            
+        }
+
+
+        #logotipo{ display: flex;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(46, 204,111);
+            border-radius: 100%;
+            padding: 30px;
+            justify-content: space-between;
+            border-image: 100px;
+            font-style: italic;
+        }
+
+
+
+ nav h2, nav p{
+     display: flex;
+    text-align: flex end;
+        font-family: 'Roboto', sans-serif;  
+        justify-content: center ;
+        
+        
+
+     }
+
+
+ 
+        
+ 
+        
+        
+        
+        
+        
+        section{
+            grid-area: section;
+            display: flex;
+            align-items: center; 
+            
+        }
+        
+        aside{
+            grid-area: aside;
+            display: flex;
+            justify-content: center;
+        }
+        
+        footer {
+            grid-area: footer;
+            display: flex;
+
+        }
